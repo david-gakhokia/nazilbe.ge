@@ -40,7 +40,7 @@
       z-index: 1;
       pointer-events: none;
       user-select: none;
-      filter: brightness(0.65);
+      filter: brightness(0.95);
       /* დაამატე სიბნელე და მსუბუქი დაბლარი */
     }
 
@@ -68,13 +68,13 @@
       border-radius: 50%;
       overflow: hidden;
       background: transparent;
-      border: 4.5px solid white;
+      /* border: 4.5px solid white; */
       display: flex;
       align-items: center;
       justify-content: center;
       box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
       transition: transform 0.2s;
-      /* backdrop-filter removed to eliminate blur */
+      backdrop-filter: blur(0.5px);
     }
 
     .clickable:hover {
@@ -88,7 +88,6 @@
       display: block;
       padding: 0;
     }
-
 
 
     @media (max-width: 600px) {
@@ -117,7 +116,7 @@
         height: 98%;
       }
 
-      /* same size logos on mobile - remove glovo override */
+
     }
   </style>
 
@@ -132,9 +131,7 @@
 
       <a href="https://glovoapp.com/ge/ka/batumi/nazilbe-bat/" class="clickable glovo" target="_blank"
         aria-label="Glovo">
-        <img
-          src="glovo.png"
-          alt="Glovo">
+        <img src="glovo.png" alt="Glovo">
       </a>
       <a href="https://wolt.com/ka/geo/batumi/venue/nazilbe" class="clickable wolt" target="_blank" aria-label="Wolt">
         <img src="wolt.png" alt="Wolt">
