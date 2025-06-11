@@ -40,7 +40,7 @@
       z-index: 1;
       pointer-events: none;
       user-select: none;
-      filter: brightness(0.65) blur(1px);
+      filter: brightness(0.65);
       /* დაამატე სიბნელე და მსუბუქი დაბლარი */
     }
 
@@ -74,7 +74,7 @@
       justify-content: center;
       box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
       transition: transform 0.2s;
-      backdrop-filter: blur(0.5px);
+      /* backdrop-filter removed to eliminate blur */
     }
 
     .clickable:hover {
@@ -89,11 +89,7 @@
       padding: 0;
     }
 
-    .clickable.glovo img {
-      width: 120%;
-      height: 120%;
-      padding: 0;
-    }
+
 
     @media (max-width: 600px) {
       .logo-links {
@@ -121,10 +117,7 @@
         height: 98%;
       }
 
-      .clickable.glovo img {
-        width: 115%;
-        height: 115%;
-      }
+      /* same size logos on mobile - remove glovo override */
     }
   </style>
 
